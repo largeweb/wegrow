@@ -1,47 +1,95 @@
-# Svelte + TS + Vite
+# React.js landing page template v2
 
-This template should help get you started developing with Svelte and TypeScript in Vite.
+## <a href="https://react-landing-page-template-2021.vercel.app/"> LIVE DEMO</a>
 
-## Recommended IDE Setup
+<img src="public/assets/gifs/demo.gif" width="100%" height="auto" />
 
-[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
+### Description
 
-## Need an official Svelte framework?
+This is a React.js/Next.js based landing page plug-n-play template, ideal for startups/companies/service providers wanting to showcase their vision in a single page sleek and modern landing page.
 
-Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
+### Features
 
-## Technical considerations
+- 📱  Responsive design
+- 🔥 [Next.js](https://nextjs.org) for Static Site Generator
 
-**Why use this over SvelteKit?**
+- 🎨 Integrate with [Tailwind CSS](https://tailwindcss.com) (w/ JIT mode)
 
-- It brings its own routing solution which might not be preferable for some users.
-- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
+- 💅 PostCSS for processing Tailwind CSS and integrated to `styled-jsx`
 
-This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
+- 🎉 Type checking [TypeScript](https://www.typescriptlang.org)
 
-Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
+- 🗂 VSCode configuration: Debug, Settings, Tasks and extension for PostCSS, ESLint, Prettier, TypeScript
 
-**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
+- 🤖 SEO metadata, JSON-LD and Open Graph tags with Next SEO
 
-Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
+- 🖱️ One click deployment with Vercel or Netlify (or manual deployment to any hosting services)
 
-**Why include `.vscode/extensions.json`?**
+Built-in feature from Next.js:
 
-Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
+- ☕ Minify HTML & CSS
+- 💨 Live reload
+- ✅ Cache busting
 
-**Why enable `allowJs` in the TS template?**
+### Make it your own
 
-While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
+#### 1. Clone repo
 
-**Why is HMR not preserving my local component state?**
-
-HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
-
-If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
-
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store'
-export default writable(0)
 ```
+git clone https://github.com/issaafalkattan/react-landing-page-template-2021.git
+cd react-landing-page-template-2021
+yarn
+```
+
+Then, you can run locally in development mode with live reload:
+
+```
+yarn dev
+```
+
+Open <http://localhost:3000> with your favorite browser to see your project.
+
+#### 2. Add your own content
+
+ 1. **Content**: change the configuration in the ```src/config/index.json``` file to change the content of the landing page to match your use ```src/config/index.json```  folder and .
+ 2. **Images**:  add any images/icons..etc to the ```public/assets/images```  folder and update their reference source in ```src/config/index.json```.
+ 3. **Theme**:  to change the theme, update the ```tailwind.config.js```  file to match the theme of your branding. [Tutorial](https://tailwindcss.com/docs/configuration).
+
+#### 3. Deploy to production
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fissaafalkattan%2Freact-landing-page-template-2021)
+
+##### Deploy manually
+
+You can see the results locally in production mode with:
+
+  ```
+yarn build
+yarn start
+```
+
+The generated HTML and CSS files are minified (built-in feature from Next js). It will also removed unused CSS from [Tailwind CSS](https://tailwindcss.com).
+
+You can create an optimised production build with:
+
+```
+yarn build-prod
+```
+
+### Contributions
+
+Everyone is welcome to contribute to this project. Feel free to open an issue if you have question or found a bug.
+
+### License
+
+Licensed under the MIT License, Copyright © 2021
+  
+
+## Liked this template? <a href="https://www.buymeacoffee.com/issaaf">Buy me a coffee ☕️</a>
+
+
+
+
+---
+
+### Looking for v1? <a href="https://github.com/issaafalkattan/React-Landing-Page-Template">V1</a>
