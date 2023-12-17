@@ -2,27 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  --color-primary: #ec4755;
-  --color-secondary: #a12c34;
-  --color-tertiaty: #99a0a3;
+  /* Green shades for primary and secondary colors, with a touch of gold for tertiary */
+  --color-primary: #4CAF50; /* A vibrant, professional green */
+  --color-secondary: #388E3C; /* A darker shade of green for contrast */
+  --color-tertiary: #FFD700; /* Gold color for accentuating elements */
+
+  /* Blue accent color for additional styling (optional) */
+  --color-accent: #2196F3; /* A crisp, professional blue */
 }
 
-a { 
-  @apply text-red-700;
+a {
+  @apply text-green-600; /* Adjusted for the primary green color */
 }
 
 a:hover {
-  @apply border-b-2 border-red-700;
+  @apply border-b-2 border-green-600; /* Hover effect using the same green shade */
 }
 
-
-
 .content p {
-  @apply my-6;
+  @apply my-6 text-green-700; /* Slightly darker text for better readability */
 }
 
 .content ul {
-  @apply my-6;
+  @apply my-6 list-disc pl-5 text-green-700; /* Styled list with green text */
+}
+
+/* Additional styling can include blue or gold accents where appropriate */
+
+/* Background color for primary */
+.bg-primary {
+  @apply bg-green-500; /* Using the primary green color */
+}
+
+/* Hover effect for bg-primary */
+.bg-primary:hover {
+  @apply bg-green-600; /* Slightly darker green on hover */
+}
+
+/* Text color for primary */
+.text-primary {
+  @apply text-green-500; /* Text color using primary green */
+}
+
+/* Hover effect for text-primary */
+.text-primary:hover {
+  @apply text-green-600; /* Darker green text on hover */
+}
+
+/* Text color for secondary */
+.text-secondary {
+  @apply text-green-700; /* Using a darker shade of green for secondary text */
+}
+
+/* Hover effect for text-secondary */
+.text-secondary:hover {
+  @apply text-green-800; /* Even darker green on hover */
+}
+
+.border-primary {
+  @apply border-green-500; /* Border color using primary green */
 }

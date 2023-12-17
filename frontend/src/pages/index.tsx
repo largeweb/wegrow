@@ -35,19 +35,20 @@ const App = () => {
       <LazyShow>
         <>
           <Features />
-          <Canvas />
+          {/* <Canvas /> */}
         </>
       </LazyShow>
-      <LazyShow>
+      {/* <LazyShow>
         <Pricing />
-      </LazyShow>
+      </LazyShow> */}
       <LazyShow>
         <>
-          <Canvas />
+          {/* <Canvas /> */}
           <About />
         </>
       </LazyShow>
       <Analytics />
+          <Canvas />
     </div>
   );
 };
