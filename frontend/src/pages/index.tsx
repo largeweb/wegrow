@@ -26,12 +26,16 @@ const App = () => {
         <MainHeroImage />
       </div>
       <Canvas />
+      <section  id="community">
+
       <LazyShow>
         <>
           <Product />
           <Canvas />
         </>
       </LazyShow>
+      </section>
+      <section id="resources">
       <LazyShow>
         <>
           <Features />
@@ -41,6 +45,7 @@ const App = () => {
       {/* <LazyShow>
         <Pricing />
       </LazyShow> */}
+      </section>
       <LazyShow>
         <>
           {/* <Canvas /> */}
