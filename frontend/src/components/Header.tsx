@@ -59,6 +59,7 @@ const Menu = () => {
                 // </Link>
                 // lets make it a hrefs instead of Link
                 <a
+                  key={item.name}
                   href={item.href}
                   className="font-medium text-gray-500 hover:text-gray-900"
                 >

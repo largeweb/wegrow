@@ -5,7 +5,7 @@ import config from '../config/index.json';
 const About = () => {
   const { company, about } = config;
   const { logo, name: companyName } = company;
-  const { socialMedia, sections } = about;
+  const { socialMedia } = about;
 
   return (
     <div
@@ -106,10 +106,11 @@ const About = () => {
         </div>
         <div className="flex items-center mt-6">
           <p className="mt-6 text-xs lg:text-sm leading-none text-gray-900 dark:text-gray-50">
-            Credit to {' '}
+            Credit to{' '}
             <a href="https://github.com/issaafalkattan" rel="nofollow">
               Issaaf Kattan
-            </a> for building this sick template!
+            </a>{' '}
+            for building this sick template!
           </p>
         </div>
       </div>

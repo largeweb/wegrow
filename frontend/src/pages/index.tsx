@@ -8,7 +8,6 @@ import Header from '../components/Header';
 import LazyShow from '../components/LazyShow';
 import MainHero from '../components/MainHero';
 import MainHeroImage from '../components/MainHeroImage';
-import Pricing from '../components/Pricing';
 import Product from '../components/Product';
 
 const App = () => {
@@ -26,23 +25,22 @@ const App = () => {
         <MainHeroImage />
       </div>
       <Canvas />
-      <section  id="community">
-
-      <LazyShow>
-        <>
-          <Product />
-          <Canvas />
-        </>
-      </LazyShow>
+      <section id="community">
+        <LazyShow>
+          <>
+            <Product />
+            <Canvas />
+          </>
+        </LazyShow>
       </section>
       <section id="resources">
-      <LazyShow>
-        <>
-          <Features />
-          {/* <Canvas /> */}
-        </>
-      </LazyShow>
-      {/* <LazyShow>
+        <LazyShow>
+          <>
+            <Features />
+            {/* <Canvas /> */}
+          </>
+        </LazyShow>
+        {/* <LazyShow>
         <Pricing />
       </LazyShow> */}
       </section>
@@ -53,7 +51,7 @@ const App = () => {
         </>
       </LazyShow>
       <Analytics />
-          <Canvas />
+      <Canvas />
     </div>
   );
 };
