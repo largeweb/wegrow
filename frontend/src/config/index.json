@@ -31,8 +31,8 @@
     "description": "Welcome to WeGrow, where it's all about talented individuals teaming up, sharing smarts, and making cool stuff happen, all at no cost. It's a real-deal community for folks who code, create, and hustle. Jump in, swap ideas, level up your skills, and be part of turning big dreams into reality. We're about growing together, project by project, connection after connection.",
     "img": "/assets/images/wegrow-hero.jpg",
     "primaryAction": {
-      "text": "Get Involved",
-      "href": "#community"
+      "text": "Join Discord",
+      "href": "https://discord.gg/u6QDSz8A"
     },
     "secondaryAction": {
       "text": "Learn More",
